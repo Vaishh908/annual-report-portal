@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Reports</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <h1>View Reports</h1>
+    </div>
+  </header>
+
+  <!-- Report Categories -->
+  <section class="category-section">
+    <div class="container">
+      <h2>Select a Report Category</h2>
+      <div class="button-group">
+        <button class="category-btn" onclick="showReports('research')">Research</button>
+        <button class="category-btn" onclick="showReports('sports')">Sports</button>
+        <button class="category-btn" onclick="showReports('environment')">Environment</button>
+        <button class="category-btn" onclick="showReports('education')">Education</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reports Display Section -->
+  <section class="reports-section">
+    <div class="container">
+      <h2 id="category-title">Reports</h2>
+      <div id="reports-container">
+        <p>Select a category to view the reports.</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="view-reports.js"></script>
+</body>
+</html>
